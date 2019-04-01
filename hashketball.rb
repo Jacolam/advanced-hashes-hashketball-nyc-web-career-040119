@@ -214,10 +214,9 @@ def game_hash
 end
 
 def num_points_scored(players_name)
-  scored = ""
   game_hash.each do |location,team_data|
-    #binding.pry
     team_data[:players].each do |name , stats |
+<<<<<<< HEAD
       #binding.pry
        if name == players_name
          #scored = stats[:points]
@@ -229,6 +228,14 @@ def num_points_scored(players_name)
  #binding.pry
  #return scored # returns empty string still for some reason
 end
+=======
+       if name == players_name 
+        return stats[:points]
+         end 
+      end 
+    end 
+end 
+>>>>>>> bc8a0dee999dbb933e88d6d3d58724ed9651a481
 
 def shoe_size(players_name)
   shoe = ""
@@ -237,9 +244,16 @@ def shoe_size(players_name)
       if name == players_name
         #binding.pry
         shoe = stats[:shoe]
+<<<<<<< HEAD
         end
       end
     end
+=======
+        end 
+      end 
+    end 
+    #binding.pry
+>>>>>>> bc8a0dee999dbb933e88d6d3d58724ed9651a481
 return shoe  # returns empty string still for some reason
 end
 
